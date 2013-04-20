@@ -13,7 +13,7 @@ All Python libraries, including Django, are installed using pip from the reaquir
 
 #### To Use:
 
-* git clone <repo>
+* git clone git://github.com/cacois/vagrant-python-django.git
 * cd vagrant-python-django
 * vagrant up
 
