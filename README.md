@@ -9,11 +9,12 @@ This is a basic Vagrant environment for Django projects.
 * South
 * Django REST Framework
 
-All Python libraries, including Django, are installed using pip from the reaquirements.txt file. To add more, just expand requirements.txt, no need to alter the Vagrantfile.
+All Python libraries, including Django, are installed using pip from the
+requirements.txt file. To add more, just expand requirements.txt, no need to
+alter the Vagrantfile.
 
 #### To Use:
 
 * git clone git://github.com/cacois/vagrant-python-django.git
 * cd vagrant-python-django
 * vagrant up
-
