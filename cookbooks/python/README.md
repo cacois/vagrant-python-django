@@ -1,7 +1,7 @@
 Description
 ===========
 
-Installs and configures Python.  Also includes LWRPs for managing python packages with `pip` and `virtualenv` isolated Python environments.
+Installs and configures Python.  Also includes LWRPs for managing Python packages with `pip` and `virtualenv` isolated Python environments.
 
 Requirements
 ============
@@ -29,7 +29,7 @@ See `attributes/default.rb` for default values.
 
 The file also contains the following attributes:
 
-* platform specific locations and settings.
+* platform-specific locations and settings.
 * source installation settings
 
 Resource/Provider
@@ -47,12 +47,12 @@ Install packages using the new hotness in Python package management...[`pip`](ht
 
 # Actions
 
-- :install: Install a pip package - if version is provided, install that specific version
-- :upgrade: Upgrade a pip package - if version is provided, upgrade to that specific version
+- :install: Install a pip package - if the version is provided, install that specific version
+- :upgrade: Upgrade a pip package - if the version is provided, upgrade to that specific version
 - :remove: Remove a pip package
 - :user: User to run pip as, for using with virtualenv
 - :group: Group to run pip as, for using with virtualenv
-- :purge: Purge a pip package (this usually entails removing configuration files as well as the package itself).  With pip packages this behaves the same as `:remove`
+- :purge: Purge a pip package (this usually entails removing configuration files as well as the package itself).  With pip packages, this behaves the same as `: remove`
 
 # Attribute Parameters
 
@@ -64,7 +64,7 @@ Install packages using the new hotness in Python package management...[`pip`](ht
 
 # Example
 
-    # install latest gunicorn into system path
+    # install latest gunicorn into the system path
     python_pip "gunicorn" do
       action :install
     end
@@ -82,8 +82,8 @@ Install packages using the new hotness in Python package management...[`pip`](ht
     end
 
     # use this provider with the core package resource
-    package "django" do
-      provider Chef::Provider::PythonPip
+    package "Django" do
+      provider Chef::Provider:: PythonPip
       action :install
     end
 
@@ -101,9 +101,9 @@ Install packages using the new hotness in Python package management...[`pip`](ht
 
 - path: name attribute. The path where the virtualenv will be created
 - interpreter: The Python interpreter to use. default is `python2.6`
-- owner: The owner for the virtualenv
+- owner: The owner of the virtualenv
 - group: The group owner of the file (string or id)
-- options : Command line options (string)
+- options: Command line options (string)
 
 # Example
 
@@ -136,7 +136,7 @@ Usage
 default
 -------
 
-Include default recipe in a run list, to get `python`, `pip` and `virtualenv`. Installs python by package or source depending on the platform.
+Include the default recipe in a run list, to get `python`, `pip`, and `virtual`. Installs python by package or source depending on the platform.
 
 package
 -------
@@ -146,12 +146,12 @@ Installs Python from packages.
 source
 ------
 
-Installs Python from source.
+Installs Python from the source.
 
 pip
 ---
 
-Installs `pip` from source.
+Installs `pip` from the source.
 
 virtualenv
 ----------
